@@ -23,9 +23,18 @@ class ComposeViewController: UIViewController {
     }
     
     @IBAction func addPost(_ sender: Any) {
+        
+        //post the data to firbase
+        
+        //dismiss the popover
+        presentingViewController?.dismiss(animated: true, completion:nil)
     }
     
     @IBAction func cancelPost(_ sender: Any) {
+        
+        //dismiss the popover
+        presentingViewController?.dismiss(animated: true, completion:nil)
+        
     }
     
     /*
