@@ -76,11 +76,11 @@
 				4EA42D391FA4CB0700DD9EBC /* AppDelegate.swift */,
 				4EA42D3B1FA4CB0700DD9EBC /* ViewController.swift */,
 				4EA42D3D1FA4CB0700DD9EBC /* Main.storyboard */,
+				4E94B73C1FA4FD3900923F6F /* ComposeViewController.swift */,
 				4EA42D401FA4CB0700DD9EBC /* Assets.xcassets */,
 				4EA42D421FA4CB0700DD9EBC /* LaunchScreen.storyboard */,
 				4EA42D451FA4CB0700DD9EBC /* Info.plist */,
 				4EA42D511FA4E3D100DD9EBC /* GoogleService-Info.plist */,
-				4E94B73C1FA4FD3900923F6F /* ComposeViewController.swift */,
 			);
 			path = emo3;
 			sourceTree = "<group>";
