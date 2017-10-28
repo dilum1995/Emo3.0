@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>4560851643-jrs0k1ael31grau86fh00lts2o86sg57.apps.googleusercontent.com</string>
+	<string>591665356961-jlgdk7ihcc518kfrcscbfsf7opbqprna.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.4560851643-jrs0k1ael31grau86fh00lts2o86sg57</string>
+	<string>com.googleusercontent.apps.591665356961-jlgdk7ihcc518kfrcscbfsf7opbqprna</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDq7DuSuDDkbOtTwITZMnUO_p8XX5krFa0</string>
+	<string>AIzaSyD7DZ4mLu9PUcRi55DP85IMNxfmMmzOgx4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>4560851643</string>
+	<string>591665356961</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.dilum.emo3.0</string>
+	<string>com.dilum.emo3</string>
 	<key>PROJECT_ID</key>
-	<string>messagingapp-b60f8</string>
+	<string>emo3-5c9b6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>messagingapp-b60f8.appspot.com</string>
+	<string>emo3-5c9b6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:4560851643:ios:75852d9239337bec</string>
+	<string>1:591665356961:ios:90833c8e736c69d0</string>
 	<key>DATABASE_URL</key>
-	<string>https://messagingapp-b60f8.firebaseio.com</string>
+	<string>https://emo3-5c9b6.firebaseio.com</string>
 </dict>
 </plist>
