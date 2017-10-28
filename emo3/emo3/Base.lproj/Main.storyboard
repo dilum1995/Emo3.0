@@ -25,16 +25,24 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8ZU-bT-twz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DKV-6Z-aEi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ZU-bT-twz" secondAttribute="trailing" id="QEc-qv-Es9"/>
+                            <constraint firstItem="8ZU-bT-twz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f2G-L7-IrK"/>
                             <constraint firstItem="8ZU-bT-twz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gL4-yD-uJN"/>
+                            <constraint firstItem="8ZU-bT-twz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kfw-5G-nX4"/>
                             <constraint firstAttribute="bottom" secondItem="8ZU-bT-twz" secondAttribute="bottom" id="l3U-vZ-TJm"/>
+                            <constraint firstAttribute="bottom" secondItem="8ZU-bT-twz" secondAttribute="bottom" id="q2X-Oy-PwG"/>
                             <constraint firstAttribute="bottomMargin" secondItem="8ZU-bT-twz" secondAttribute="bottom" id="ud7-Iw-F3o"/>
                             <constraint firstItem="8ZU-bT-twz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vKT-if-VlW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="MNv-Ht-QOZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="q6r-D9-OoR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="q6r-D9-OoR">
+                            <connections>
+                                <segue destination="8ES-2Y-fV6" kind="presentation" id="qTJ-9v-tmF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,9 +56,46 @@
                     <view key="view" contentMode="scaleToFill" id="nDG-nw-LTY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uph-UF-UE9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Compose" id="s3R-Hk-J5D">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="xeY-ss-OwR">
+                                            <connections>
+                                                <action selector="cancelPost:" destination="8ES-2Y-fV6" id="TMe-ei-z8f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KMK-YW-tze">
+                                            <connections>
+                                                <action selector="addPost:" destination="8ES-2Y-fV6" id="e3A-CH-8pG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vc2-Ph-gEy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uph-UF-UE9" firstAttribute="top" secondItem="ZON-Fr-ZfB" secondAttribute="top" id="GSw-d9-ZAH"/>
+                            <constraint firstItem="ZON-Fr-ZfB" firstAttribute="bottom" secondItem="Vc2-Ph-gEy" secondAttribute="bottom" id="Jxv-b4-UP4"/>
+                            <constraint firstItem="Uph-UF-UE9" firstAttribute="leading" secondItem="ZON-Fr-ZfB" secondAttribute="leading" id="Uu4-Pz-atJ"/>
+                            <constraint firstItem="Vc2-Ph-gEy" firstAttribute="top" secondItem="Uph-UF-UE9" secondAttribute="bottom" id="YJP-jC-nKx"/>
+                            <constraint firstItem="Uph-UF-UE9" firstAttribute="trailing" secondItem="ZON-Fr-ZfB" secondAttribute="trailing" id="aVb-7M-jWX"/>
+                            <constraint firstItem="Vc2-Ph-gEy" firstAttribute="leading" secondItem="ZON-Fr-ZfB" secondAttribute="leading" id="iOZ-Lx-2xv"/>
+                            <constraint firstItem="ZON-Fr-ZfB" firstAttribute="trailing" secondItem="Vc2-Ph-gEy" secondAttribute="trailing" id="kuN-7g-1c7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZON-Fr-ZfB"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Vc2-Ph-gEy" id="KwN-kt-Ikv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07n-zd-0vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
