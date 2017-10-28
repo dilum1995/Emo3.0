@@ -33,16 +33,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MNv-Ht-QOZ"/>
+                    <navigationItem key="navigationItem" id="MNv-Ht-QOZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="q6r-D9-OoR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Compose View Controller-->
         <scene sceneID="qcw-xY-4Ox">
             <objects>
-                <viewController id="8ES-2Y-fV6" sceneMemberID="viewController">
+                <viewController id="8ES-2Y-fV6" customClass="ComposeViewController" customModule="emo3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDG-nw-LTY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
