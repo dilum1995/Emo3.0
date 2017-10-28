@@ -13,9 +13,11 @@
 		4EA42D411FA4CB0700DD9EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA42D401FA4CB0700DD9EBC /* Assets.xcassets */; };
 		4EA42D441FA4CB0700DD9EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA42D421FA4CB0700DD9EBC /* LaunchScreen.storyboard */; };
 		4EA42D521FA4E3D200DD9EBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA42D511FA4E3D100DD9EBC /* GoogleService-Info.plist */; };
+		7DA3577C5939808A90B1F3FE /* Pods_emo3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4973DFB2AA461A52E03EEB /* Pods_emo3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4973DFB2AA461A52E03EEB /* Pods_emo3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emo3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA42D361FA4CB0700DD9EBC /* emo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA42D391FA4CB0700DD9EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EA42D3B1FA4CB0700DD9EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4EA42D431FA4CB0700DD9EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA42D451FA4CB0700DD9EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA42D511FA4E3D100DD9EBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A689B91CA1F984910E18C08 /* Pods-emo3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emo3.release.xcconfig"; path = "Pods/Target Support Files/Pods-emo3/Pods-emo3.release.xcconfig"; sourceTree = "<group>"; };
+		9960ADC5386A4E2C1F954506 /* Pods-emo3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emo3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emo3/Pods-emo3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA3577C5939808A90B1F3FE /* Pods_emo3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C9B7CB4D72D55657E00D929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4973DFB2AA461A52E03EEB /* Pods_emo3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4EA42D2D1FA4CB0700DD9EBC = {
 			isa = PBXGroup;
 			children = (
 				4EA42D381FA4CB0700DD9EBC /* emo3 */,
 				4EA42D371FA4CB0700DD9EBC /* Products */,
+				81F258CBD7EA9BBBDF1B7C63 /* Pods */,
+				3C9B7CB4D72D55657E00D929 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = emo3;
 			sourceTree = "<group>";
 		};
+		81F258CBD7EA9BBBDF1B7C63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9960ADC5386A4E2C1F954506 /* Pods-emo3.debug.xcconfig */,
+				6A689B91CA1F984910E18C08 /* Pods-emo3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EA42D481FA4CB0700DD9EBC /* Build configuration list for PBXNativeTarget "emo3" */;
 			buildPhases = (
+				2E394727172FD48AE3C99670 /* [CP] Check Pods Manifest.lock */,
 				4EA42D321FA4CB0700DD9EBC /* Sources */,
 				4EA42D331FA4CB0700DD9EBC /* Frameworks */,
 				4EA42D341FA4CB0700DD9EBC /* Resources */,
+				3CE4F21683EB402C339082F9 /* [CP] Embed Pods Frameworks */,
+				D7891F782AE5C6FDAA40E7B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E394727172FD48AE3C99670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emo3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE4F21683EB402C339082F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-emo3/Pods-emo3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emo3/Pods-emo3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7891F782AE5C6FDAA40E7B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emo3/Pods-emo3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EA42D321FA4CB0700DD9EBC /* Sources */ = {
@@ -276,6 +361,7 @@
 		};
 		4EA42D491FA4CB0700DD9EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9960ADC5386A4E2C1F954506 /* Pods-emo3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +376,7 @@
 		};
 		4EA42D4A1FA4CB0700DD9EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A689B91CA1F984910E18C08 /* Pods-emo3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
