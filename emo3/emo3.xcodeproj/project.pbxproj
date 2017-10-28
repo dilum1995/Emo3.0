@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E94B73D1FA4FD3900923F6F /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E94B73C1FA4FD3900923F6F /* ComposeViewController.swift */; };
 		4EA42D3A1FA4CB0700DD9EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA42D391FA4CB0700DD9EBC /* AppDelegate.swift */; };
 		4EA42D3C1FA4CB0700DD9EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA42D3B1FA4CB0700DD9EBC /* ViewController.swift */; };
 		4EA42D3F1FA4CB0700DD9EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA42D3D1FA4CB0700DD9EBC /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2C4973DFB2AA461A52E03EEB /* Pods_emo3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emo3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E94B73C1FA4FD3900923F6F /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		4EA42D361FA4CB0700DD9EBC /* emo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA42D391FA4CB0700DD9EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EA42D3B1FA4CB0700DD9EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4EA42D421FA4CB0700DD9EBC /* LaunchScreen.storyboard */,
 				4EA42D451FA4CB0700DD9EBC /* Info.plist */,
 				4EA42D511FA4E3D100DD9EBC /* GoogleService-Info.plist */,
+				4E94B73C1FA4FD3900923F6F /* ComposeViewController.swift */,
 			);
 			path = emo3;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E94B73D1FA4FD3900923F6F /* ComposeViewController.swift in Sources */,
 				4EA42D3C1FA4CB0700DD9EBC /* ViewController.swift in Sources */,
 				4EA42D3A1FA4CB0700DD9EBC /* AppDelegate.swift in Sources */,
 			);
