@@ -22,6 +22,7 @@ class ComposeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //IBAction for add post
     @IBAction func addPost(_ sender: Any) {
         
         //post the data to firbase
