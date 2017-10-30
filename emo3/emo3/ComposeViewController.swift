@@ -30,11 +30,12 @@ class ComposeViewController: UIViewController {
         presentingViewController?.dismiss(animated: true, completion:nil)
     }
     
+    //IBAction for cancel post
     @IBAction func cancelPost(_ sender: Any) {
         
         //dismiss the popover
         presentingViewController?.dismiss(animated: true, completion:nil)
-        
+         
     }
     
     /*
